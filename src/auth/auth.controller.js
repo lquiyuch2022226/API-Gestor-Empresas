@@ -13,20 +13,17 @@ export const login = async (req, res) => {
         msg: "Incorrect credentials, this email isn't exists in database",
       });
     }
-    //verificar si el ususario está activo
     if (!usuario.estado) {
       return res.status(400).json({
         msg: "This user don't exists in database",
       });
     }
-    // verificar la contraseña
     const validPassword = bcryptjs.compareSync(password, usuario.password);
     if (!validPassword) {
       return res.status(400).json({
         msg: "Incorrect password",
       });
     }
-    //generar el JWT
     const token = await generarJWT( usuario.id);
 
     res.status(200).json({

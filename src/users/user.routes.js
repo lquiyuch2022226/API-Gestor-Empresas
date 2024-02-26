@@ -1,15 +1,12 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
 
+import { existenteEmail } from "../helpers/db-validators.js";
 import { usuariosPost } from './user.controller.js'
 import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
 
 const router = Router();
-
-router.get(
-    '/:id'
-    );
 
 router.post(
     "/",
@@ -20,8 +17,9 @@ router.post(
       check("correo", "The email cannot be empty").not().isEmpty(),
       check("correo", "This isn't a email").isEmail(),
       check("correo").custom(existenteEmail),
-      check("role").custom(esRoleValido),
       validarCampos,
     ],
     usuariosPost
 )
+
+export default router;
