@@ -1,8 +1,14 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
 
-import { existenteEmail } from "../helpers/db-validators.js";
-import { usuariosPost } from './user.controller.js'
+import { existenteEmail, existeUsuarioById } from "../helpers/db-validators.js";
+import {
+    usuariosPost,
+    usuariosGet,
+    getUsuarioById,
+    usuariosPut,
+    usuariosDelete
+} from './user.controller.js';
 import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
 
@@ -21,5 +27,38 @@ router.post(
     ],
     usuariosPost
 )
+
+router.get("/", usuariosGet);
+
+router.get(
+  "/:id",
+  [
+    check("id", "This isn't a valid ID").isMongoId(),
+    check("id").custom(existeUsuarioById),
+    validarCampos,
+  ],
+  getUsuarioById
+);
+
+router.put(
+    "/:id",
+    [
+      check("id", "This isn't a valid ID").isMongoId(),
+      check("id").custom(existeUsuarioById),
+      validarCampos,
+    ],
+    usuariosPut
+  );
+  
+  router.delete(
+    "/:id",
+    [
+      //validarJWT,
+      check("id", "This isn't a valid ID").isMongoId(),
+      check("id").custom(existeUsuarioById),
+      validarCampos,
+    ],
+    usuariosDelete
+  );
 
 export default router;

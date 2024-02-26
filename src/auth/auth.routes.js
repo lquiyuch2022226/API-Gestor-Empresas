@@ -12,6 +12,6 @@ router.post(
         check('correo', "This isn't a valid email").isEmail(),
         check('password', "The password is required").not().isEmpty(),
         validarCampos,
-    ], login)
+    ], login);
 
 export default router
