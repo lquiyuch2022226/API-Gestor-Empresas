@@ -7,7 +7,7 @@ const EmpresaSchema = mongoose.Schema({
   },
   levelImpact: {
     type: Number,
-    required: [true, "The level of impact is required"]
+    required: [true, "The level of impact is required"],
   },
   yearsTrayectory: {
     type: Number,

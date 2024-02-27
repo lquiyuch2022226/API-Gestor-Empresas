@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "empresaColeccion",
-    "dateExported": "2024-02-27T06:15:40.014Z",
+    "dateExported": "2024-02-27T07:00:23.076Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,12 +14,12 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-27T05:55:28.280Z",
-            "modified": "2024-02-27T06:13:42.267Z",
+            "modified": "2024-02-27T06:38:48.572Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"pepsi\",\n  \"levelImpact\": \"2\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa de alimentos\"\n}",
+                "raw": "{\n  \"nombre\": \"pepsi\",\n  \"levelImpact\": \"1\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa de alimentos\"\n}",
                 "form": []
             },
             "tests": []
@@ -50,6 +50,25 @@
             "modified": "2024-02-27T06:14:12.133Z",
             "headers": [],
             "params": [],
+            "tests": []
+        },
+        {
+            "_id": "455918cd-4d70-4bba-966a-fe22e157b0ac",
+            "colId": "b7bf8102-657c-43e6-9f79-036e23f888ee",
+            "containerId": "",
+            "name": "empresa Put",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/65dd83acc0a3c044f9f3851e",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2024-02-27T06:17:26.218Z",
+            "modified": "2024-02-27T06:40:46.357Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nombre\": \"Fanta\",\n  \"levelImpact\": \"3\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa de alimentos\"\n}",
+                "form": []
+            },
             "tests": []
         }
     ]
