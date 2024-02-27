@@ -1,10 +1,10 @@
-import Empresa from './empresa.model';
+import Empresa from './empresa.model.js';
 
 
 export const empresaPost = async (req, res) => {
 
     const {nombre, levelImpact, yearsTrayectory, categoria} = req.body;
-    const empresa = new Empresa( {nombre, levelImpact, yearsTrayectory, categoria} );
+    const empresa = new Empresa( {nombre, levelImpact: parseInt(levelImpact), yearsTrayectory: parseInt(yearsTrayectory), categoria} );
 
     await empresa.save();
 

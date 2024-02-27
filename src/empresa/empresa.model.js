@@ -7,8 +7,7 @@ const EmpresaSchema = mongoose.Schema({
   },
   levelImpact: {
     type: Number,
-    required: [true, "The level of impact is required"],
-    unique: true,
+    required: [true, "The level of impact is required"]
   },
   yearsTrayectory: {
     type: Number,
@@ -24,7 +23,7 @@ const EmpresaSchema = mongoose.Schema({
   }
 });
 
-UserSchema.methods.toJSON = function(){
+EmpresaSchema.methods.toJSON = function(){
   const { __v, _id, ...empresa} = this.toObject();
   empresa.uid = _id;
   return empresa;
