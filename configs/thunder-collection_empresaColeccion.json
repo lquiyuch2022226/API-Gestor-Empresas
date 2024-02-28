@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "empresaColeccion",
-    "dateExported": "2024-02-28T04:06:10.543Z",
+    "dateExported": "2024-02-28T05:04:14.112Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -14,7 +14,7 @@
             "method": "POST",
             "sortNum": 10000,
             "created": "2024-02-28T03:28:08.067Z",
-            "modified": "2024-02-28T03:58:52.330Z",
+            "modified": "2024-02-28T04:54:43.365Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -24,7 +24,7 @@
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"Pepsi 2\",\n  \"levelImpact\": \"1\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa de alimentos\"\n}",
+                "raw": "{\n  \"nombre\": \"zara\",\n  \"levelImpact\": \"1\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa_de_ropa\"\n}",
                 "form": []
             },
             "tests": []
@@ -38,11 +38,11 @@
             "method": "GET",
             "sortNum": 20000,
             "created": "2024-02-28T03:28:08.068Z",
-            "modified": "2024-02-28T03:59:18.743Z",
+            "modified": "2024-02-28T05:02:44.748Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTI1NTIsImV4cCI6MTcwOTA5NjE1Mn0.9kuib97B-Mz9FOprHqU8ZBZn7irRgKgDH8i1SszH7sU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTY1NTMsImV4cCI6MTcwOTEwMDE1M30.m_sZJhZPEiZgeHEhZhiNMOb9ieHT_omN33706eexRTE"
                 }
             ],
             "params": [],
@@ -89,6 +89,34 @@
                 "raw": "{\n  \"nombre\": \"Fanta\",\n  \"levelImpact\": \"3\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa de alimentos\"\n}",
                 "form": []
             },
+            "tests": []
+        },
+        {
+            "_id": "76c3dfba-7f09-4ff1-a566-586c96feab39",
+            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "containerId": "",
+            "name": "empresa GetByYear",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/byYears/3",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2024-02-28T04:15:47.909Z",
+            "modified": "2024-02-28T05:03:44.547Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "3dfde974-0e70-410e-b6cc-13008076a907",
+            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "containerId": "",
+            "name": "empresa GetByCategory",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/byCategory/Empresa de ropa",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2024-02-28T04:53:36.482Z",
+            "modified": "2024-02-28T04:57:21.550Z",
+            "headers": [],
+            "params": [],
             "tests": []
         }
     ]

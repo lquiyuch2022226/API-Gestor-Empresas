@@ -52,3 +52,41 @@ export const empresaPut = async (req, res = response) => {
         empresa
     });
 }
+
+// filtros y orden de empresas
+
+export const empresaGetByYear = async (req, res) => {
+    const { years } = req.params;
+    const {limite, desde} = req.query;
+    const query = {estado: true, yearsTrayectory: years};
+
+    const [total, empresas] = await Promise.all([
+        Empresa.countDocuments(query),
+        Empresa.find(query)
+        .skip(Number(desde))
+        .limit(Number(limite))
+    ]);
+
+    res.status(200).json({
+        total,
+        empresas
+    });
+}
+
+export const empresaGetByCategory = async (req, res) => {
+    const { category } = req.params;
+    const {limite, desde} = req.query;
+    const query = {estado: true, categoria: category};
+
+    const [total, empresas] = await Promise.all([
+        Empresa.countDocuments(query),
+        Empresa.find(query)
+        .skip(Number(desde))
+        .limit(Number(limite))
+    ]);
+
+    res.status(200).json({
+        total,
+        empresas
+    });
+}
