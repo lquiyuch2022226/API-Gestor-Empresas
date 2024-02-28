@@ -1,68 +1,88 @@
 {
     "client": "Thunder Client",
     "collectionName": "empresaColeccion",
-    "dateExported": "2024-02-27T07:00:23.076Z",
+    "dateExported": "2024-02-28T04:06:10.543Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "e1dd7bbd-1d26-4a3a-9504-4b3208383b8a",
-            "colId": "b7bf8102-657c-43e6-9f79-036e23f888ee",
+            "_id": "3e996b07-e5ce-483b-8918-56a25a957775",
+            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
             "containerId": "",
             "name": "empresa Post",
             "url": "http://localhost:3000/ventasApi/v1/empresa",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-27T05:55:28.280Z",
-            "modified": "2024-02-27T06:38:48.572Z",
-            "headers": [],
+            "created": "2024-02-28T03:28:08.067Z",
+            "modified": "2024-02-28T03:58:52.330Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTI1NTIsImV4cCI6MTcwOTA5NjE1Mn0.9kuib97B-Mz9FOprHqU8ZBZn7irRgKgDH8i1SszH7sU"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"pepsi\",\n  \"levelImpact\": \"1\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa de alimentos\"\n}",
+                "raw": "{\n  \"nombre\": \"Pepsi 2\",\n  \"levelImpact\": \"1\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa de alimentos\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "811ea1be-a19d-41b6-a5c1-d26d2fe8f72d",
-            "colId": "b7bf8102-657c-43e6-9f79-036e23f888ee",
+            "_id": "e255be4b-a4c5-48ee-923b-3fc4206642bf",
+            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
             "containerId": "",
             "name": "empresas Get",
             "url": "http://localhost:3000/ventasApi/v1/empresa",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-02-27T06:12:16.808Z",
-            "modified": "2024-02-27T06:12:21.643Z",
-            "headers": [],
+            "created": "2024-02-28T03:28:08.068Z",
+            "modified": "2024-02-28T03:59:18.743Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTI1NTIsImV4cCI6MTcwOTA5NjE1Mn0.9kuib97B-Mz9FOprHqU8ZBZn7irRgKgDH8i1SszH7sU"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "324578c8-b032-49b9-91cf-cc9df25f5c47",
-            "colId": "b7bf8102-657c-43e6-9f79-036e23f888ee",
+            "_id": "c9ff75c5-be73-4aa0-af3d-b31ea18dae58",
+            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
             "containerId": "",
             "name": "empresa GetById",
-            "url": "http://localhost:3000/ventasApi/v1/empresa/65dd7d96ab2cf17d8f32d96c",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/65deaa20d49eaf9c5fb52753",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-02-27T06:13:58.146Z",
-            "modified": "2024-02-27T06:14:12.133Z",
-            "headers": [],
+            "created": "2024-02-28T03:28:08.069Z",
+            "modified": "2024-02-28T03:59:29.421Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTI1NTIsImV4cCI6MTcwOTA5NjE1Mn0.9kuib97B-Mz9FOprHqU8ZBZn7irRgKgDH8i1SszH7sU"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "455918cd-4d70-4bba-966a-fe22e157b0ac",
-            "colId": "b7bf8102-657c-43e6-9f79-036e23f888ee",
+            "_id": "05f332f7-e714-4909-a03c-f516c1d81080",
+            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
             "containerId": "",
             "name": "empresa Put",
-            "url": "http://localhost:3000/ventasApi/v1/empresa/65dd83acc0a3c044f9f3851e",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/65deaa20d49eaf9c5fb52753",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2024-02-27T06:17:26.218Z",
-            "modified": "2024-02-27T06:40:46.357Z",
-            "headers": [],
+            "created": "2024-02-28T03:28:08.070Z",
+            "modified": "2024-02-28T03:59:37.701Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTI1NTIsImV4cCI6MTcwOTA5NjE1Mn0.9kuib97B-Mz9FOprHqU8ZBZn7irRgKgDH8i1SszH7sU"
+                }
+            ],
             "params": [],
             "body": {
                 "type": "json",
