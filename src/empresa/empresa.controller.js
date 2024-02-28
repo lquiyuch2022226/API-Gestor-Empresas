@@ -5,7 +5,7 @@ import exceljs from 'exceljs';
 export const empresaPost = async (req, res) => {
 
     const { nombre, levelImpact, yearsTrayectory, categoria } = req.body;
-    const empresa = new Empresa({ nombre, levelImpact: parseInt(levelImpact), yearsTrayectory: parseInt(yearsTrayectory), categoria });
+    const empresa = new Empresa({ nombre, levelImpact: parseInt(levelImpact), yearsTrayectory: parseInt(yearsTrayectory), categoria }); //lquiyuch
 
     await empresa.save();
 
@@ -127,6 +127,8 @@ export const empresaGetFromZ_A = async (req, res) => {
         empresas
     });
 }
+
+//generador de excel
 
 export const generarExcel = async (req, res) => {
     const workbook = new exceljs.Workbook();

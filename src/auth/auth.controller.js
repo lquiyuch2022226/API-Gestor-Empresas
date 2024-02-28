@@ -27,7 +27,7 @@ export const login = async (req, res) => {
     const token = await generarJWT( usuario.id);
 
     res.status(200).json({
-      msg: 'Your login',
+      msg: 'You are login',
       usuario,
       token
     });
