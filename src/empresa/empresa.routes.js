@@ -10,7 +10,8 @@ import {
   empresaGetByYear,
   empresaGetByCategory,
   empresaGetFromA_Z,
-  empresaGetFromZ_A
+  empresaGetFromZ_A,
+  generarExcel
 } from './empresa.controller.js';
 import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
@@ -75,6 +76,11 @@ router.get("/orderFrom/A_Z",
 router.get("/orderFrom/Z_A",
   validarJWT,
   empresaGetFromZ_A
+);
+
+router.get("/generar/Excel",
+  validarJWT,
+  generarExcel
 );
 
 

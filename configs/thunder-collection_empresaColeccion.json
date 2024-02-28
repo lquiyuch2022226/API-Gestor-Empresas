@@ -1,63 +1,63 @@
 {
     "client": "Thunder Client",
     "collectionName": "empresaColeccion",
-    "dateExported": "2024-02-28T05:04:14.112Z",
+    "dateExported": "2024-02-28T23:17:03.826Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "3e996b07-e5ce-483b-8918-56a25a957775",
-            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "_id": "0c1754c0-7ced-4659-9559-e97afca4b561",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
             "containerId": "",
             "name": "empresa Post",
             "url": "http://localhost:3000/ventasApi/v1/empresa",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-28T03:28:08.067Z",
-            "modified": "2024-02-28T04:54:43.365Z",
+            "created": "2024-02-28T22:01:51.284Z",
+            "modified": "2024-02-28T23:15:13.306Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTI1NTIsImV4cCI6MTcwOTA5NjE1Mn0.9kuib97B-Mz9FOprHqU8ZBZn7irRgKgDH8i1SszH7sU"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYjc1ZmIxMmVhZTRjYWNmYWEwNDMiLCJpYXQiOjE3MDkxNjAzMDMsImV4cCI6MTcwOTE2MzkwM30.nSe-e1RbOylk11Xgmdel9a8RdwahukJFCRh5WQzXw_E"
                 }
             ],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"nombre\": \"zara\",\n  \"levelImpact\": \"1\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa_de_ropa\"\n}",
+                "raw": "{\n  \"nombre\": \"ara 2\",\n  \"levelImpact\": \"1\",\n  \"yearsTrayectory\": \"3\",\n  \"categoria\": \"Empresa_de_ropa\"\n}",
                 "form": []
             },
             "tests": []
         },
         {
-            "_id": "e255be4b-a4c5-48ee-923b-3fc4206642bf",
-            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "_id": "cf952276-ad06-41e0-8efc-717c417fc9bf",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
             "containerId": "",
             "name": "empresas Get",
             "url": "http://localhost:3000/ventasApi/v1/empresa",
             "method": "GET",
             "sortNum": 20000,
-            "created": "2024-02-28T03:28:08.068Z",
-            "modified": "2024-02-28T05:02:44.748Z",
+            "created": "2024-02-28T22:01:51.285Z",
+            "modified": "2024-02-28T22:45:50.848Z",
             "headers": [
                 {
                     "name": "x-token",
-                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRlYWViNmQ0OWVhZjljNWZiNTI3NjMiLCJpYXQiOjE3MDkwOTY1NTMsImV4cCI6MTcwOTEwMDE1M30.m_sZJhZPEiZgeHEhZhiNMOb9ieHT_omN33706eexRTE"
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYjc1ZmIxMmVhZTRjYWNmYWEwNDMiLCJpYXQiOjE3MDkxNjAzMDMsImV4cCI6MTcwOTE2MzkwM30.nSe-e1RbOylk11Xgmdel9a8RdwahukJFCRh5WQzXw_E"
                 }
             ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "c9ff75c5-be73-4aa0-af3d-b31ea18dae58",
-            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "_id": "1b5c68af-8caf-4f23-b63e-55432e5abf98",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
             "containerId": "",
             "name": "empresa GetById",
             "url": "http://localhost:3000/ventasApi/v1/empresa/65deaa20d49eaf9c5fb52753",
             "method": "GET",
             "sortNum": 30000,
-            "created": "2024-02-28T03:28:08.069Z",
-            "modified": "2024-02-28T03:59:29.421Z",
+            "created": "2024-02-28T22:01:51.286Z",
+            "modified": "2024-02-28T22:01:51.286Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -68,15 +68,15 @@
             "tests": []
         },
         {
-            "_id": "05f332f7-e714-4909-a03c-f516c1d81080",
-            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "_id": "a06ce0ab-9bf8-47d8-868a-ae3795b7953d",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
             "containerId": "",
             "name": "empresa Put",
             "url": "http://localhost:3000/ventasApi/v1/empresa/65deaa20d49eaf9c5fb52753",
             "method": "PUT",
             "sortNum": 40000,
-            "created": "2024-02-28T03:28:08.070Z",
-            "modified": "2024-02-28T03:59:37.701Z",
+            "created": "2024-02-28T22:01:51.287Z",
+            "modified": "2024-02-28T22:01:51.287Z",
             "headers": [
                 {
                     "name": "x-token",
@@ -92,30 +92,92 @@
             "tests": []
         },
         {
-            "_id": "76c3dfba-7f09-4ff1-a566-586c96feab39",
-            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "_id": "98013470-e907-4be3-b096-bcbdeb7b2293",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
             "containerId": "",
             "name": "empresa GetByYear",
-            "url": "http://localhost:3000/ventasApi/v1/empresa/byYears/3",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/byYears/2",
             "method": "GET",
             "sortNum": 50000,
-            "created": "2024-02-28T04:15:47.909Z",
-            "modified": "2024-02-28T05:03:44.547Z",
-            "headers": [],
+            "created": "2024-02-28T22:01:51.288Z",
+            "modified": "2024-02-28T22:46:30.787Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYjc1ZmIxMmVhZTRjYWNmYWEwNDMiLCJpYXQiOjE3MDkxNjAzMDMsImV4cCI6MTcwOTE2MzkwM30.nSe-e1RbOylk11Xgmdel9a8RdwahukJFCRh5WQzXw_E"
+                }
+            ],
             "params": [],
             "tests": []
         },
         {
-            "_id": "3dfde974-0e70-410e-b6cc-13008076a907",
-            "colId": "5d073763-2b65-41ce-bda5-545e15565e45",
+            "_id": "e7ff2104-22c9-4c1d-94d8-754a255ac6fb",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
             "containerId": "",
             "name": "empresa GetByCategory",
             "url": "http://localhost:3000/ventasApi/v1/empresa/byCategory/Empresa de ropa",
             "method": "GET",
             "sortNum": 60000,
-            "created": "2024-02-28T04:53:36.482Z",
-            "modified": "2024-02-28T04:57:21.550Z",
+            "created": "2024-02-28T22:01:51.289Z",
+            "modified": "2024-02-28T22:01:51.289Z",
             "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "729e0674-1271-4e84-b250-1a270c7aa6d3",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
+            "containerId": "",
+            "name": "empresa OrderByA_Z",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/orderFrom/A_Z",
+            "method": "GET",
+            "sortNum": 90000,
+            "created": "2024-02-28T23:14:19.078Z",
+            "modified": "2024-02-28T23:14:57.156Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYjc1ZmIxMmVhZTRjYWNmYWEwNDMiLCJpYXQiOjE3MDkxNjAzMDMsImV4cCI6MTcwOTE2MzkwM30.nSe-e1RbOylk11Xgmdel9a8RdwahukJFCRh5WQzXw_E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cf21f7c4-1a11-49a7-8318-d077803fe8f9",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
+            "containerId": "",
+            "name": "empresa OrderByZ_A",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/orderFrom/Z_A",
+            "method": "GET",
+            "sortNum": 95000,
+            "created": "2024-02-28T23:15:30.083Z",
+            "modified": "2024-02-28T23:16:06.749Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYjc1ZmIxMmVhZTRjYWNmYWEwNDMiLCJpYXQiOjE3MDkxNjAzMDMsImV4cCI6MTcwOTE2MzkwM30.nSe-e1RbOylk11Xgmdel9a8RdwahukJFCRh5WQzXw_E"
+                }
+            ],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "62fd5555-51fd-4c10-92dd-99c7bb6a32db",
+            "colId": "8b00e428-90af-474e-820a-756d8344e560",
+            "containerId": "",
+            "name": "empresa GenerarExcel",
+            "url": "http://localhost:3000/ventasApi/v1/empresa/generar/Excel",
+            "method": "GET",
+            "sortNum": 100000,
+            "created": "2024-02-28T22:40:37.309Z",
+            "modified": "2024-02-28T22:48:12.482Z",
+            "headers": [
+                {
+                    "name": "x-token",
+                    "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI2NWRmYjc1ZmIxMmVhZTRjYWNmYWEwNDMiLCJpYXQiOjE3MDkxNjAzMDMsImV4cCI6MTcwOTE2MzkwM30.nSe-e1RbOylk11Xgmdel9a8RdwahukJFCRh5WQzXw_E"
+                }
+            ],
             "params": [],
             "tests": []
         }
