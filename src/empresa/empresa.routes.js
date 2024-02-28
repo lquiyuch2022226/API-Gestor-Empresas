@@ -8,7 +8,9 @@ import {
   getEmpresaById,
   empresaPut,
   empresaGetByYear,
-  empresaGetByCategory
+  empresaGetByCategory,
+  empresaGetFromA_Z,
+  empresaGetFromZ_A
 } from './empresa.controller.js';
 import { validarCampos } from '../middlewares/validar-campos.js';
 import { validarJWT } from "../middlewares/validar-jwt.js";
@@ -64,5 +66,16 @@ router.get("/byCategory/:category",
   validarJWT,
   empresaGetByCategory
 );
+
+router.get("/orderFrom/A_Z",
+  validarJWT,
+  empresaGetFromA_Z
+);
+
+router.get("/orderFrom/Z_A",
+  validarJWT,
+  empresaGetFromZ_A
+);
+
 
 export default router;

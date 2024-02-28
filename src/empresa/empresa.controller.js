@@ -90,3 +90,39 @@ export const empresaGetByCategory = async (req, res) => {
         empresas
     });
 }
+
+export const empresaGetFromA_Z = async (req, res) => { 
+    const { limite, desde } = req.query;
+    const query = { estado: true};
+
+    const [total, empresas] = await Promise.all([
+        Empresa.countDocuments(query),
+        Empresa.find(query)
+            .sort({ nombre: 1 })
+            .skip(Number(desde))
+            .limit(Number(limite))
+    ]);
+
+    res.status(200).json({
+        total,
+        empresas
+    });
+}
+
+export const empresaGetFromZ_A = async (req, res) => { 
+    const { limite, desde } = req.query;
+    const query = { estado: true};
+
+    const [total, empresas] = await Promise.all([
+        Empresa.countDocuments(query),
+        Empresa.find(query)
+            .sort({ nombre: -1 })
+            .skip(Number(desde))
+            .limit(Number(limite))
+    ]);
+
+    res.status(200).json({
+        total,
+        empresas
+    });
+}
