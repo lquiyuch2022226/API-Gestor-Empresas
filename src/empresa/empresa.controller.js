@@ -5,6 +5,7 @@ import exceljs from 'exceljs';
 export const empresaPost = async (req, res) => {
 
     const { nombre, levelImpact, yearsTrayectory, categoria } = req.body;
+
     const empresa = new Empresa({ nombre, levelImpact: parseInt(levelImpact), yearsTrayectory: parseInt(yearsTrayectory), categoria }); //lquiyuch
 
     await empresa.save();
@@ -129,12 +130,12 @@ export const empresaGetFromZ_A = async (req, res) => {
 }
 
 //generador de excel
-
 export const generarExcel = async (req, res) => {
     const workbook = new exceljs.Workbook();
     const worksheet = workbook.addWorksheet('Empresas');
 
-    worksheet.addRow(['Nombre', 'Impacto', 'Años de Trayectoria', 'Categoria']);
+    // Añadir filas y establecer valores
+    worksheet.addRow(['Nombre', 'Impacto', 'Años de Trayectoria', 'Categoría']);
 
     const empresas = await Empresa.find();
 
@@ -143,10 +144,20 @@ export const generarExcel = async (req, res) => {
         worksheet.addRow([nombre, levelImpact, yearsTrayectory, categoria]);
     });
 
-    const filePath = 'empresas.xlsx';
-    await workbook.xlsx.writeFile(filePath);
-
-    res.status(200).json({
-        msg: `Archivo de excel generado correctamente, revisa en la carpeta del proyecto`
+    worksheet.columns.forEach(column => {
+        column.width = 25;
     });
+
+    try {
+        const archivoGenerado = 'empresas.xlsx';
+        await workbook.xlsx.writeFile(archivoGenerado);
+        
+        res.status(200).json({
+            msg: 'Archivo de Excel generado correctamente, revísalo en la carpeta del proyecto'
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Error al generar el archivo de Excel, para realizar cambios es necesario que el archivo de Excel este cerrado'
+        });
+    }
 }

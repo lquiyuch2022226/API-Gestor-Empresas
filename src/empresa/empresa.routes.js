@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import { check } from 'express-validator';
 
-import { existeEmpresaById } from "../helpers/db-validators.js";
+import { existeEmpresaById, existeEmpresaByName } from "../helpers/db-validators.js";
 import {
   empresaPost,
   empresaGet,
@@ -23,6 +23,7 @@ router.post(
   [
     validarJWT,
     check("nombre", "The name cannot be empty").not().isEmpty(),
+    check("nombre").custom(existeEmpresaByName),
     check("levelImpact", "The level of Impact cannot be empty").not().isEmpty(),
     check("yearsTrayectory", "The years of Trayectory cannot be empty").not().isEmpty(),
     check("categoria", "The category cannot be empty").not().isEmpty(),

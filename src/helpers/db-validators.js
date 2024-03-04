@@ -21,3 +21,10 @@ export const existeEmpresaById = async (id = '') => {
         throw new Error(`This ${id} don't exists in database`);
     }
 }
+
+export const existeEmpresaByName = async (nombre = '') => {
+     const empresaExistente = await Empresa.findOne({ nombre: nombre });
+    if (empresaExistente){
+        throw new Error(`This name: ${nombre} is already in used, try other name`);
+    }
+}
