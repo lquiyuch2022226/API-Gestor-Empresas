@@ -27,4 +27,4 @@ export const existeEmpresaByName = async (nombre = '') => {
     if (empresaExistente){
         throw new Error(`This name: ${nombre} is already in used, try other name`);
     }
-}
+} 
