@@ -1,20 +1,20 @@
 {
     "client": "Thunder Client",
     "collectionName": "loginColeccion",
-    "dateExported": "2024-02-28T23:17:11.634Z",
+    "dateExported": "2024-03-04T02:19:36.021Z",
     "version": "1.1",
     "folders": [],
     "requests": [
         {
-            "_id": "51968889-d953-4f45-ada6-0a90758c5765",
-            "colId": "b7a586f6-e79f-43fe-b8bb-e771a1acd027",
+            "_id": "3238c473-531c-463f-9ca5-cf60ca41e3aa",
+            "colId": "5c81df08-5738-48ae-91b8-c60c42b13333",
             "containerId": "",
             "name": "login",
             "url": "http://localhost:3000/ventasApi/v1/auth/login",
             "method": "POST",
             "sortNum": 10000,
-            "created": "2024-02-28T22:01:51.295Z",
-            "modified": "2024-02-28T22:01:51.295Z",
+            "created": "2024-03-04T00:59:00.256Z",
+            "modified": "2024-03-04T00:59:00.256Z",
             "headers": [],
             "params": [],
             "body": {

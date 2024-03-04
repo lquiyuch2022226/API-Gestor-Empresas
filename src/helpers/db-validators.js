@@ -11,14 +11,14 @@ export const existenteEmail = async (correo = '') => {
 export const existeUsuarioById = async (id = '') => {
     const existeUsuario = await User.findById(id);
     if (!existeUsuario){
-        throw new Error(`This ${id} don't exists in database`);
+        throw new Error(`A user with this ID: ${id} don't exists in database`);
     }
 }
 
 export const existeEmpresaById = async (id = '') => {
     const existeEmpresa = await Empresa.findById(id);
     if (!existeEmpresa){
-        throw new Error(`This ${id} don't exists in database`);
+        throw new Error(`A company with this ID: ${id} don't exists in database`);
     }
 }
 
